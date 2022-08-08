@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net5.0;net6.0</TargetFrameworks>
+    <RootNamespace>Spectre.Console</RootNamespace>
+    <LangVersion>10</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="$(SolutionDir)/stylecop.json" Link="stylecop.json" />
+    <None Include="$(SolutionDir)/.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <StartYear>2022</StartYear>
+    <EndYear>$([System.DateTime]::Today.Year)</EndYear>
+    <FullYear Condition="'$(StartYear)'=='$(EndYear)'">$(StartYear)</FullYear>
+    <FullYear Condition="'$(StartYear)'!='$(EndYear)'">$(StartYear)-$(EndYear)</FullYear>
+
+    <!-- Properties related to packaging -->
+    <Authors>Nils Andresen</Authors>
+    <Copyright>Copyright © $(FullYear) — Nils Andresen</Copyright>
+    <Description>An implementation of an ITypeRegistrar for Spectre.Console using Microsoft.Extensions.DependencyInjection</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/nils-org/Spectre.Console.Registrars.Microsoft-Di</PackageProjectUrl>
+    <PackageTags>spectre;commandline;console;dependency;injection;di;registrar</PackageTags>
+    <RepositoryUrl>https://github.com/nils-org/Spectre.Console.Registrars.Microsoft-Di.git</RepositoryUrl>
+    <PackageReleaseNotes>https://github.com/nils-org/Spectre.Console.Registrars.Microsoft-Di/releases</PackageReleaseNotes>
+    <Version>0.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2021.3.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Spectre.Console" Version="0.44.0" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>
