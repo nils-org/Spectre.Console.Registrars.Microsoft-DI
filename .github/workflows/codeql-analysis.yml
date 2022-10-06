@@ -37,16 +37,11 @@ jobs:
     - uses: actions/setup-dotnet@v2.0.0
       with:
         # codecov needs 2.1
-        dotnet-version: '2.1.818'
-    - uses: actions/setup-dotnet@v2.0.0
-      with:
-        dotnet-version: '3.1.x'
-    - uses: actions/setup-dotnet@v2.0.0
-      with:
-        dotnet-version: '5.0.x'
-    - uses: actions/setup-dotnet@v2.0.0
-      with:
-        dotnet-version: '6.0.x'
+        dotnet-version: |
+            2.1
+            3.1
+            5.0
+            6.0
 
     - name: Cache Tools
       uses: actions/cache@v3
@@ -69,8 +64,7 @@ jobs:
       with:
         script-path: recipe.cake
         target: DotNetCore-Build
-        cake-version: 0.38.5
-        cake-bootstrap: true
+        cake-version: 1.3.0
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
