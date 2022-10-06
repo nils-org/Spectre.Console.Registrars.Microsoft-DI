@@ -9,6 +9,5 @@ $env:DOTNET_NOLOGO = '1'
 dotnet tool restore
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-dotnet cake recipe.cake --bootstrap
 dotnet cake recipe.cake @args
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
