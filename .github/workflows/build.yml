@@ -19,7 +19,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ windows-2019, ubuntu-18.04, macos-10.15 ]
+        os: [ windows-2019, ubuntu-18.04, macos-11 ]
     env:
       COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
       GITHUB_PAT: ${{ secrets.GH_TOKEN }}
