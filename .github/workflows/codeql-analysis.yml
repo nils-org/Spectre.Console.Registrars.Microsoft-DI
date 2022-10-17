@@ -34,7 +34,7 @@ jobs:
       with:
         fetch-depth: 0
 
-    - uses: actions/setup-dotnet@v3.0.1
+    - uses: actions/setup-dotnet@v3.0.2
       with:
         # codecov needs 2.1
         dotnet-version: |
