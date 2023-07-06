@@ -3,15 +3,26 @@
   "extends": [ "github>nils-org/renovate-config" ],
   "packageRules": [
     {
-      "matchPackageNames": ["cake.tool"],
-      "enabled": false
+      "matchPackageNames": [
+        "cake.tool",
+        "Microsoft.Extensions.DependencyInjection"
+      ],
+      "matchUpdateTypes": ["minor", "patch"]
+      "enabled": false,
+    },
+    {
+      "matchPackageNames": [
+        "Microsoft.Extensions.DependencyInjection"
+      ],
+      "matchUpdateTypes": ["major"],
+      "labels": ["Breaking Change"]
     },
     {
       "matchPackagePatterns": [
-        "^Spectre\\.Console.*",
-        "^Microsoft.Extensions.DependencyInjection$"
+        "^Spectre\\.Console\\..*"
       ],
-      "bumpVersion": "minor"
+      "matchUpdateTypes": ["major", "minor"],
+      "labels": ["Breaking Change"]
     }
   ]
 }
