@@ -7,8 +7,8 @@
         "cake.tool",
         "Microsoft.Extensions.DependencyInjection"
       ],
-      "matchUpdateTypes": ["minor", "patch"]
-      "enabled": false,
+      "matchUpdateTypes": ["minor", "patch"],
+      "enabled": false
     },
     {
       "matchPackageNames": [
