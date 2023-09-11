@@ -1,10 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
+        <TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
         <RootNamespace>Spectre.Console.Registrars.MicrosoftDi.Tests</RootNamespace>
-        <LangVersion>10</LangVersion>
-        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
@@ -17,8 +15,8 @@
         <PackageReference Include="JetBrains.Annotations" Version="2023.2.0" />
         <PackageReference Include="Moq" Version="4.20.69" />
         <PackageReference Include="Shouldly" Version="4.2.1" />
-        <PackageReference Include="Spectre.Console.Cli" Version="0.46.0" />
-        <PackageReference Include="Spectre.Console.Testing" Version="0.46.0" />
+        <PackageReference Include="Spectre.Console.Cli" Version="0.47.0" />
+        <PackageReference Include="Spectre.Console.Testing" Version="0.47.0" />
         <PackageReference Include="xunit" Version="2.5.0" />
         <PackageReference Include="xunit.analyzers" Version="1.2.0" />
         <PackageReference Include="xunit.runner.visualstudio" Version="2.5.0">
