@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [ "github>nils-org/renovate-config" ],
+  "extends": [ "github>nils-org/renovate-config:minimal" ],
   "packageRules": [
     {
       "matchPackageNames": [
