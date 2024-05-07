@@ -14,7 +14,8 @@ BuildParameters.SetParameters(
   twitterMessage: standardNotificationMessage,
   preferredBuildProviderType: BuildProviderType.GitHubActions,
   shouldRunDotNetCorePack: true,
-  shouldUseDeterministicBuilds: true
+  shouldUseDeterministicBuilds: true,
+  shouldRunCodecov: false
   );
 
 BuildParameters.PrintParameters(Context);
