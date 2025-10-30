@@ -13,6 +13,7 @@ internal class CoolResultReturner
 {
     public int Return(int input)
     {
+        Console.WriteLine($"Demo returning result code: {input}");
         return input;
     }
 }
