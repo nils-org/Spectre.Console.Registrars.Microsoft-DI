@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo", "demo.csproj", "{0564D110-D705-4F58-9361-5057C61C0F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spectre.Console.Registrars.Microsoft-Di", "..\src\Spectre.Console.Registrars.Microsoft-Di\Spectre.Console.Registrars.Microsoft-Di.csproj", "{61654F02-C730-47FA-BB78-B0515BF30FC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0564D110-D705-4F58-9361-5057C61C0F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0564D110-D705-4F58-9361-5057C61C0F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0564D110-D705-4F58-9361-5057C61C0F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0564D110-D705-4F58-9361-5057C61C0F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61654F02-C730-47FA-BB78-B0515BF30FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61654F02-C730-47FA-BB78-B0515BF30FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61654F02-C730-47FA-BB78-B0515BF30FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61654F02-C730-47FA-BB78-B0515BF30FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
