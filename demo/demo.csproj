@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="../src/Spectre.Console.Registrars.Microsoft-Di/Spectre.Console.Registrars.Microsoft-Di.csproj" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.10" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.12" />
     <PackageReference Include="Spectre.Console.Cli" Version="0.50.0"  />
   </ItemGroup>
 
